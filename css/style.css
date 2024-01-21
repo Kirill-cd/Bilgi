@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1153px;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 45px;
+  font-family: Manrope;
+}
+header .flex-wrapper {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  header nav {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  header nav {
+    display: none;
+  }
+}
+header li {
+  list-style-type: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+header li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 40px;
+  font-weight: 700;
+  text-decoration: none;
+}
+header button {
+  border-radius: 5px;
+  border: none;
+  background-color: #F84646;
+  font-size: 14px;
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+header button a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+main {
+  font-family: Manrope;
+}
+main h2 {
+  padding: 120px 0px 30px 0px;
+  text-align: center;
+  font-size: 36px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 800;
+}
+main p {
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  line-height: 39.5px;
+  letter-spacing: 0.2px;
+}
+main .flex-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+main .flex-wrapper .boxcontent {
+  width: 298px;
+  flex-shrink: 0;
+  padding: 91px 0px 83px 0px;
+}
+main .flex-wrapper .boxcontent img {
+  text-align: center;
+  padding: 0px 104px 10px 104px;
+}
+main .flex-wrapper .boxcontent h3 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+main .test {
+  background-color: #F84646;
+  display: block;
+}
+main .test h2 {
+  color: var(--Default-White, #FFF);
+  text-align: center;
+  font-feature-settings: "liga" off;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  padding: 68px 0px 8px 0px;
+}
+main .test p {
+  color: var(--Default-White, #FFF);
+  text-align: center;
+  font-feature-settings: "liga" off;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+main .test .footercont {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 78px;
+  flex-wrap: wrap;
+  padding-top: 64px;
+}
+@media (max-width: 1000px) {
+  main .test .footercont {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  main .test .footercont img {
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 1000px) {
+  main .test .footercont .fgs {
+    padding: 30px 0px 30px 0px;
+  }
+}
+main .test .footercont h3 {
+  color: #FFF;
+  font-feature-settings: "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  padding: 0px 46px 0px 49px;
+}
+
+.bilgi {
+  padding: 200px 0px 148px 0px;
+  background-image: url(../img/main_background.png);
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .bilgi {
+    background-position: 70%;
+    background-image: radial-gradient(111.67% 156.26% at 141.47% 78.12%, #FFF 0%, rgba(255, 255, 255, 0) 100%), url(../img/main_background.png);
+  }
+}
+.bilgi h1 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  max-width: 665px;
+}
+@media (max-width: 600px) {
+  .bilgi h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.bilgi img {
+  display: none;
+}
+@media (max-width: 700px) {
+  .bilgi img {
+    position: absolute;
+    display: block;
+    left: 39px;
+    top: 20px;
+  }
+}
+.bilgi p {
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding-bottom: 50px;
+  max-width: 650px;
+  line-height: 36px;
+}
+
+.mail {
+  display: flex;
+  background-color: #FFF;
+  border-radius: 8px;
+  max-width: 502px;
+  padding: 6px 6px 6px 32px;
+}
+.mail button {
+  width: 136px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #F84646;
+  color: #FFF;
+  border: none;
+}
+.mail input {
+  flex-grow: 1;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
